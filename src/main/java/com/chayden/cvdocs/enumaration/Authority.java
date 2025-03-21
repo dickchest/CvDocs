@@ -1,7 +1,10 @@
 package com.chayden.cvdocs.enumaration;
 
+import lombok.Getter;
+
 import static com.chayden.cvdocs.constant.Constans.*;
 
+@Getter
 public enum Authority {
     USER(USER_AUTHORITIES),
     ADMIN(ADMIN_AUTHORITIES),
@@ -14,7 +17,4 @@ public enum Authority {
         this.value = value;
     }
 
-    public String getValue() {
-        return value;
-    }
 }
